@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #c8d5bb;
+  background: linear-gradient(0deg, #47585c 0%, #c8d5bb 100%);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+:is(button, a):focus-visible {
+  outline: 2px solid #c8d5bb;
+  border-radius: 1.75rem;
+}
+
+a:focus-visible {
+  border-radius: 1rem;
+  outline-offset: 0.5rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}
