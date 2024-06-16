@@ -52,9 +52,11 @@
 </script>
 
 <main class="font-mono">
-  <p class="absolute bottom-0 left-0 text-[2rem] sm:text-[3rem] md:text-[4rem]">
+  <p
+    class="absolute bottom-0 left-0 font-bold text-[2rem] sm:text-[3rem] md:text-[4rem]"
+  >
     <span
-      class="text-wrap break-keep w-full font-extrabold overflow-hidden after:content-['|']"
+      class="text-wrap break-keep w-full overflow-hidden after:content-['|']"
       id="quote"
     ></span>
   </p>
